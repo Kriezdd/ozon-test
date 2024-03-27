@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "GT Eesti Pro Display";
+    src: url("https://cdn2.ozone.ru/s3/ob-frontend/fonts/GT-Eesti-Pro-Display-Regular.woff2?p=2")
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+* {
+    font-family: "GT Eesti Pro Display", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    width: 35.5rem;
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 0.13rem;
+}
+
+.progress-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: auto;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блок Progress</title>
+    <script type="module" src="./src/app.js"></script>
+    <link rel="stylesheet" href="./src/styles/media.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/controls.css">
+    <link rel="stylesheet" href="./src/ProgressCircle/ProgressCircle.css">
+</head>
+<body>
+<main class="main-content">
+    <h4 class="title">Progress</h4>
+    <div class="progress-container">
+        <div id="progress">
+            <!-- сюда присоединяется элемент ProgressCircle -->
+        </div>
+        <div class="controls">
+            <div class="controls-element">
+                <input type="number" id="value" min="0" max="100" value="0">
+                <label for="value">Value</label>
+            </div>
+            <div class="controls-element">
+                <label class="switch">
+                    <input type="checkbox" class="switch__input" id="animate"/>
+                    <span class="switch__slider"></span>
+                </label>
+                <label for="animate">Animate</label>
+            </div>
+            <div class="controls-element">
+                <label class="switch">
+                    <input type="checkbox" class="switch__input" id="hide"/>
+                    <span class="switch__slider"></span>
+                </label>
+                <label for="hide">Hide</label>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

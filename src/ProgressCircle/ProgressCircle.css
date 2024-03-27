@@ -1,0 +1,36 @@
+@property --percent {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 0%;
+}
+
+.progress-circle {
+    width: 9.38rem;
+    position: relative;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: conic-gradient(#005CFF var(--percent), #EAF0F6 0);
+    transition: --percent 0.5s, opacity 0.5s;
+}
+
+.progress-circle::after {
+    width: 85%;
+    content: "";
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
