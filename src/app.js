@@ -1,7 +1,7 @@
 import ProgressCircle from './ProgressCircle/ProgressCircle.js';
 
 // Инициализация прогресс-блока
-const progressElement = new ProgressCircle('progress', 50, true, false);
+const progressElement = new ProgressCircle('progress');
 
 // Если есть входные данные, то обновим input элементы
 if (progressElement.value || progressElement.isAnimated || progressElement.isHidden) {
